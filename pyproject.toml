@@ -1,0 +1,9 @@
+[project]
+name = "field-crop-diagnosis"
+version = "1.0.0"
+description = "大田作物苗情智能诊断与农事决策支持系统 V1.0"
+requires-python = ">=3.11,<3.14"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]

@@ -1,0 +1,5 @@
+APP_NAME = "大田作物苗情智能诊断与农事决策支持系统"
+APP_VERSION = "V1.0"
+
+WINDOW_MIN_WIDTH = 1100
+WINDOW_MIN_HEIGHT = 720
