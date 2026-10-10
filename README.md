@@ -36,6 +36,19 @@ pip install -r requirements.txt
 python -m app.main
 ```
 
+## 运行同事提供的 MyApp 界面
+
+`MyApp` 是独立的 PySide6 界面原型，只依赖 PySide6。它的源码没有需要替换的个人电脑路径。在仓库根目录执行：
+
+```powershell
+python -m venv .venv
+.\.venv\Scripts\python.exe -m pip install "PySide6>=6.7,<7"
+.\.venv\Scripts\python.exe .\MyApp\main.py
+```
+
+若已按上面的“本地启动”安装完整项目依赖，可直接执行最后一行。`MyApp` 目前只有界面；“保存种植档案”“导入图片”“生成PDF”等按钮尚未接入业务逻辑。
+环境安装完成后，也可双击 `MyApp\run.cmd` 启动，脚本会按自身位置寻找项目内的 `.venv`，无需填写本机绝对路径。
+
 ## 开发原则
 
 1. 功能必须真实可运行；
